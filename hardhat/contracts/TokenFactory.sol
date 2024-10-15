@@ -24,16 +24,16 @@ contract TokenFactory {
 
     mapping(address => memeToken) public addressToMemeTokenMapping;
 
-    uint constant MEMETOKEN_CREATION_PLATFORM_FEE = 0.0001 ether;
+    uint constant MEMETOKEN_CREATION_PLATFORM_FEE = 1 ether;
     uint constant MEMECOIN_FUNDING_DEADLINE_DURATION = 10 days;
-    uint constant MEMECOIN_FUNDING_GOAL = 24 ether;
+    uint constant MEMECOIN_FUNDING_GOAL = 420 ether;
 
-    address constant UNISWAP_V2_FACTORY_ADDRESS = 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f;
-    address constant UNISWAP_V2_ROUTER_ADDRESS = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
+    address constant UNISWAP_V2_FACTORY_ADDRESS = 0x9e5A52f57b3038F1B8EeE45F28b3C1967e22799C;
+    address constant UNISWAP_V2_ROUTER_ADDRESS = 0xedf6066a2b290C185783862C7F4776A2C8077AD1;
 
 
     uint constant DECIMALS = 10 ** 18;
-    uint constant MAX_SUPPLY = 1000000 * DECIMALS;
+    uint constant MAX_SUPPLY = 1000000000 * DECIMALS;
     uint constant INIT_SUPPLY = 20 * MAX_SUPPLY / 100;
 
     uint256 public constant INITIAL_PRICE = 30000000000000;  // Initial price in wei (P0), 3.00 * 10^13
